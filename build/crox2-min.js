@@ -1,5 +1,5 @@
 /*
- Crox v1.4.4
+ Crox v1.4.5
  https://github.com/thx/crox
 
  Released under the MIT license
