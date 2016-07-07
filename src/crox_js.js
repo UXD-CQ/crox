@@ -13,7 +13,8 @@ function compile2jsfn(s, config) {
 	var ast = parsetmpl(s);
 	var encodeName;
 	if (config) encodeName = config.htmlEncode;
-	s = codegen_js_tran(ast, encodeName || '_htmlEncode', true);
+	var ignoreWhitespace = !!(config && config.ignoreWhitespace);
+	s = codegen_js_tran(ast, encodeName || '_htmlEncode', true, ignoreWhitespace);
 	var body = '';
 	if (!encodeName)
 		body = "var _obj = { '<': '&lt;', '>': '&gt;', '&': '&amp;', '\"': '&quot;' };\

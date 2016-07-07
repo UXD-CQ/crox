@@ -1,6 +1,6 @@
 /// <reference path="common.js"/>
 /// <reference path="codegen_common.js"/>
-function codegen_js_tran(prog, encodeName, defaultEncode) {
+function codegen_js_tran(prog, encodeName, defaultEncode, ignoreWhitespace) {
 	/// <param name="prog" type="Array">AST</param>
 	/// <param name="encodeName" type="String"></param>
 	/// <param name="defaultEncode" type="Boolean"></param>
@@ -84,6 +84,9 @@ function codegen_js_tran(prog, encodeName, defaultEncode) {
 				emit('if(' + tName + ' !=null)_s += ' + ((defaultEncode ? !a[2] : a[2]) ? encodeName + '(' + tName + ')' : tName) + ';');
 				break;
 			case 'text':
+				if (ignoreWhitespace) {
+					if (/^\s+$/.test(a[1])) break;
+				}
 				emit('_s += ' + quote(a[1]) + ';');
 				break;
 			case 'inc':

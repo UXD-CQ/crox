@@ -1,9 +1,9 @@
 /**
- * @preserve Crox v1.4.5
+ * @preserve Crox v1.4.6
  * https://github.com/thx/crox
  *
  * Released under the MIT license
- * md5: c605cc0256fc0e8589c44fd263575d58
+ * md5: b43312b4facbfcc1de6e08bb420b1df3
  */
 (function(root) {var Crox = (function() {
 function Class(base, constructor, methods) {
@@ -517,7 +517,7 @@ function isCond(op) {
 
 /// <reference path="common.js"/>
 /// <reference path="codegen_common.js"/>
-function codegen_js_tran(prog, encodeName, defaultEncode) {
+function codegen_js_tran(prog, encodeName, defaultEncode, ignoreWhitespace) {
 	/// <param name="prog" type="Array">AST</param>
 	/// <param name="encodeName" type="String"></param>
 	/// <param name="defaultEncode" type="Boolean"></param>
@@ -601,6 +601,9 @@ function codegen_js_tran(prog, encodeName, defaultEncode) {
 				emit('if(' + tName + ' !=null)_s += ' + ((defaultEncode ? !a[2] : a[2]) ? encodeName + '(' + tName + ')' : tName) + ';');
 				break;
 			case 'text':
+				if (ignoreWhitespace) {
+					if (/^\s+$/.test(a[1])) break;
+				}
 				emit('_s += ' + quote(a[1]) + ';');
 				break;
 			case 'inc':
@@ -749,7 +752,8 @@ function compile2jsfn(s, config) {
 	var ast = parsetmpl(s);
 	var encodeName;
 	if (config) encodeName = config.htmlEncode;
-	s = codegen_js_tran(ast, encodeName || '_htmlEncode', true);
+	var ignoreWhitespace = !!(config && config.ignoreWhitespace);
+	s = codegen_js_tran(ast, encodeName || '_htmlEncode', true, ignoreWhitespace);
 	var body = '';
 	if (!encodeName)
 		body = "var _obj = { '<': '&lt;', '>': '&gt;', '&': '&amp;', '\"': '&quot;' };\
@@ -805,4 +809,4 @@ var Crox = {
 	}
 };
 
-Crox.version = "1.4.5";return Crox;})();if ( typeof module == "object" && module && typeof module.exports == "object" ) module.exports = Crox;else if (typeof define == "function" && (define.amd || define.cmd) ) define(function () { return Crox; } );else if (typeof KISSY != "undefined") KISSY.add(function(){ return Crox; });if (root) root.Crox = Crox; })(this);
+Crox.version = "1.4.6";return Crox;})();if ( typeof module == "object" && module && typeof module.exports == "object" ) module.exports = Crox;else if (typeof define == "function" && (define.amd || define.cmd) ) define(function () { return Crox; } );else if (typeof KISSY != "undefined") KISSY.add(function(){ return Crox; });if (root) root.Crox = Crox; })(this);
