@@ -1,9 +1,9 @@
 /**
- * @preserve Crox v1.4.6
+ * @preserve Crox v1.4.7
  * https://github.com/thx/crox
  *
  * Released under the MIT license
- * md5: f833184c125c428c92d517eb4c65698d
+ * md5: e146a5d78a6b80dd7324ca8bfbf01967
  */
 KISSY.add("crox", function(){function Class(base, constructor, methods) {
 	/// <param name="base" type="Function"></param>
@@ -318,7 +318,8 @@ var Lexer = function() {
 			[/{{<script>[\s\S]*?<\/script>}}/, function(a) {
 				return 'script';
 			}],
-			[/{{(?:#(?:if|each|forin)(?=\s))?/, function(a) {
+			[/{{\*[\s\S]*\*}}/],
+			[/{{(?!\*)(?:#(?:if|each|forin)(?=\s))?/, function(a) {
 				this.pushState('{{');
 				return a;
 			}]

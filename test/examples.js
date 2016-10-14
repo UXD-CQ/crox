@@ -7,6 +7,11 @@ function Example(title, desc, tmpl, data, out) {
 	this.out = out;
 }
 var examples = [
+	new Example('注释',
+		'',
+		'hello{{* world*}}',
+		null,
+		'hello'),
 	new Example('文本',
 		'不支持转义，如需输出 {{，用 {{"{{"}}',
 		'hello world',

@@ -61,7 +61,8 @@ var Lexer = function() {
 			[/{{<script>[\s\S]*?<\/script>}}/, function(a) {
 				return 'script';
 			}],
-			[/{{(?:#(?:if|each|forin)(?=\s))?/, function(a) {
+			[/{{\*[\s\S]*\*}}/],
+			[/{{(?!\*)(?:#(?:if|each|forin)(?=\s))?/, function(a) {
 				this.pushState('{{');
 				return a;
 			}]
