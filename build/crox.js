@@ -1,9 +1,9 @@
 /**
- * @preserve Crox v1.4.7
+ * @preserve Crox v1.4.8
  * https://github.com/thx/crox
  *
  * Released under the MIT license
- * md5: ad46af2f62fc3e903f9fd5dbf59e6d19
+ * md5: 1f44aff8abb900d62251f5105fa86472
  */
 (function(root) {var Crox = (function() {
 function Class(base, constructor, methods) {
@@ -319,7 +319,7 @@ var Lexer = function() {
 			[/{{<script>[\s\S]*?<\/script>}}/, function(a) {
 				return 'script';
 			}],
-			[/{{\*[\s\S]*\*}}/],
+			[/{{\*[\s\S]*?\*}}/],
 			[/{{(?!\*)(?:#(?:if|each|forin)(?=\s))?/, function(a) {
 				this.pushState('{{');
 				return a;
@@ -810,4 +810,4 @@ var Crox = {
 	}
 };
 
-Crox.version = "1.4.7";return Crox;})();if ( typeof module == "object" && module && typeof module.exports == "object" ) module.exports = Crox;else if (typeof define == "function" && (define.amd || define.cmd) ) define(function () { return Crox; } );else if (typeof KISSY != "undefined") KISSY.add(function(){ return Crox; });if (root) root.Crox = Crox; })(this);
+Crox.version = "1.4.8";return Crox;})();if ( typeof module == "object" && module && typeof module.exports == "object" ) module.exports = Crox;else if (typeof define == "function" && (define.amd || define.cmd) ) define(function () { return Crox; } );else if (typeof KISSY != "undefined") KISSY.add(function(){ return Crox; });if (root) root.Crox = Crox; })(this);
