@@ -1,6 +1,5 @@
 ---
 layout: page
-script: assets/post.js
 ---
 
 <div id="page">
@@ -20,64 +19,29 @@ script: assets/post.js
         </div>
         {{ content }}
       </article>
-      <!-- Duoshuo Comment BEGIN -->
-      <div class="ds-thread"></div>
-      <!-- Duoshuo Comment END -->
+      {% include duoshuo.html %}
+      {% include footer.html %}
     </div>
-
   </div>
-  <div id="nav" class="clearfix">
+  <div id="nav">
     <a href="javascript:void(0)" class="toggler" id="J_toggler">
-      <i class="iconfont">&#271;</i> 导航
+      <i class="iconfont">&#xe60b;</i>
+      <span class="label">导航</span>
     </a>
-    <a href="{{ site.baseurl }}/" class="logo dib-box"><i class="iconlogo mi-crox dib"></i><span class="logo-text dib">Crox</span></a>
-    <ul class="menu">
+    <a href="{{ site.baseurl }}" class="logo dib-box">
+      <i class="iconlogo dib mi-{{ site.title | downcase }}"></i>
+      <span class="logo-text dib">{{ site.title }}</span>
+    </a>
+    <ul class="categories menu">
+    {% for category in site.categories %}
       <li>
-        <a href="https://github.com/thx/crox" target="_blank" class="entry">
-          <i class="iconfont">&#61464;</i> Github
+        <a href="{{ site.baseurl }}/{{ category[0] }}" class="entry">
+          <i class="iconfont mi-{{ category[0] }}"></i>
+          {% if category[0] == 'apis' %}API{% else %}{{ category[0] | capitalize }}{% endif %}
         </a>
       </li>
-      <li>
-        <a href="{{ site.baseurl }}/releases" class="entry">
-          <i class="iconfont">&#48;</i> Releases
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/faq" class="entry">
-          <i class="iconfont">&#228;</i> Q&A
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/resources" class="entry">
-          <i class="iconfont">&#248;</i> Resources
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/articles" class="entry">
-          <i class="iconfont">&#291;</i> Articles
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/apis" class="entry">
-          <i class="iconfont">&#267;</i> API
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/demos" class="entry">
-          <i class="iconfont">&#277;</i> Demos
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/tutorials" class="entry">
-          <i class="iconfont">&#338;</i> Tutorials
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/" class="entry">
-          <i class="iconfont">&#336;</i> Home
-        </a>
-      </li>
-
+    {% endfor %}
+      {% include extra-nav.html %}
     </ul>
   </div>
 </div>
