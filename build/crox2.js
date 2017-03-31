@@ -1,9 +1,9 @@
 /**
- * @preserve Crox v1.4.8
+ * @preserve Crox v1.4.9
  * https://github.com/thx/crox
  *
  * Released under the MIT license
- * md5: 5344a500432ebe9b6eeaea4051c6100c
+ * md5: b5875bc1d954765e524f0424c7626e09
  */
 KISSY.add("crox", function(){function Class(base, constructor, methods) {
 	/// <param name="base" type="Function"></param>
@@ -144,7 +144,6 @@ function encodeCommonName(s) {
 
 /// <reference path="common.js"/>
 function createLexer(g) {
-
 	function Token(tag, text, index, subMatches, end, pos) {
 		this.tag = tag;
 		this.text = text;
@@ -157,6 +156,12 @@ function createLexer(g) {
 		return this.text;
 	};
 	function emptyFunc() { }
+	function tofn(f) {
+		if (typeof f == 'function') return f;
+		return function() {
+			return f;
+		};
+	}
 	function buildScanner(a) {
 		var n = 1;
 		var b = [];
@@ -164,7 +169,7 @@ function createLexer(g) {
 		var fa = [];
 		for (var i = 0; i < a.length; ++i) {
 			matchIndexes.push(n += RegExp('|' + a[i][0].source).exec('').length);
-			fa.push(a[i][1] || emptyFunc);
+			fa.push(a[i][1] ? tofn(a[i][1]) : emptyFunc);
 			b.push('(' + a[i][0].source + ')');
 		}
 
@@ -221,7 +226,7 @@ function createLexer(g) {
 			for (var j = 0; j < idx.length; ++j)
 				if (t[idx[j]]) {
 					var tag = rule[2][j].apply(obj, t.slice(idx[j], idx[j + 1]));
-					if (tag == null) return null;
+					//if (tag == null) return null;
 					return new Token(tag, t[0], obj.index, t.slice(idx[j] + 1, idx[j + 1]), i, currentPos);
 				}
 		}
@@ -232,15 +237,15 @@ function createLexer(g) {
 			scan: function() {
 				do {
 					var t = scan();
-					if (t != null) {
-						var _row = currentPos.row;
-						var _col = currentPos.col;
-						var ms = t.text.match(re_newLine);
-						var h = ms ? ms.length : 0;
-						_row += h;
-						if (h == 0) _col += t.text.length;
-						else _col = re_lastLine.exec(t.text)[0].length + 1;
-						currentPos = new Position(_row, _col);
+					var _row = currentPos.row;
+					var _col = currentPos.col;
+					var ms = t.text.match(re_newLine);
+					var h = ms ? ms.length : 0;
+					_row += h;
+					if (h == 0) _col += t.text.length;
+					else _col = re_lastLine.exec(t.text)[0].length + 1;
+					currentPos = new Position(_row, _col);
+					if (t.tag != null) {
 						return t;
 					}
 				} while (true);

@@ -92,6 +92,9 @@ function codegen_js_tran(prog, encodeName, defaultEncode, ignoreWhitespace) {
 			case 'inc':
 				//stmtsGen(a[2][1]);
 				break;
+			case 'script':
+				scripts.push(a[1]);
+				break;
 			default:
 				throw Error('unknown stmt: ' + a[0]);
 		}
@@ -192,6 +195,7 @@ function codegen_js_tran(prog, encodeName, defaultEncode, ignoreWhitespace) {
 	}
 
 	var body = [];
+	var scripts = [];
 	stmtsGen(prog[1]);
 
 	var posLog = [];
@@ -211,8 +215,8 @@ function codegen_js_tran(prog, encodeName, defaultEncode, ignoreWhitespace) {
 	}
 	joinJsStr(body);
 
-	if (prog[2]) {
-		jsStr += prog[2].join(';');
+	if (scripts.length) {
+		jsStr += scripts.join(';');
 	}
 	//alert(posLog.join('\n'));
 	var strObj = new String(jsStr);
