@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <!-- 当前时间戳 -->
+    <script>var timeStamps = [new Date()];</script>
+    <title>腾讯云 产业智变·云启未来 - 腾讯</title>
+    <!-- <meta name="keywords" content="腾讯云,tencent cloud,云服务器,云主机,CDN,对象存储,域名注册备案,云存储,云数据库,互联网+解决方案,QQ云">
+    <meta name="description" content="腾讯云(tencent cloud)为数百万的企业和开发者提供安全稳定的云计算服务，涵盖云服务器、云数据库、云存储、视频与CDN、域名注册等全方位云服务和各行业解决方案。"> -->
+    <meta property="og:title" content="腾讯云 - 产业智变 云启未来" />
+    <!-- <meta property="og:description" content="腾讯云(tencent cloud)为数百万的企业和开发者提供安全稳定的云计算服务，涵盖云服务器、云数据库、云存储、视频与CDN、域名注册等全方位云服务和各行业解决方案。" />
+    <meta property="og:image" content="https://cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/gateway/shareicons/cloud.png" />
+    <meta property="og:url" content="https://cloud.tencent.com" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="baidu-site-verification" content="Yqh6LFzxHs" />
+    <meta name="google-site-verification" content="FLzxWYFG80Hk_XLvVz6GpBdsY-f7fdNfnucHDWWCr7k" />
+    <meta name="shenma-site-verification" content="d33db0ae4613f827196c6e785aaeee4d_1593673238" />
+    <meta name="360-site-verification" content="943b53dde1f410dc44724f15d9e11954" />
+    <meta name="sogou_site_verification" content="j0R8AKzqAJ" />
+    <meta name="bytedance-verification-code" content="" /> 
+    <link rel="dns-prefetch" href="//cloudcache.tencent-cloud.com">
+    <link rel="dns-prefetch" href="//qzs.qq.com"> -->
+    <link rel="icon" href="//cloudcache.tencent-cloud.com/qcloud/favicon.ico?t=201902181234" type="image/x-icon" />
+    <link rel="alternate" href="https://cloud.tencent.com/" hreflang="zh-Hans" />
+    <!-- <link rel="alternate" href="https://www.tencentcloud.com/zh/" hreflang="zh-Hant" />
+    <link rel="alternate" href="https://www.tencentcloud.com/jp/" hreflang="ja" />
+    <link rel="alternate" href="https://www.tencentcloud.com/ko/" hreflang="ko" />
+    <link rel="alternate" href="https://www.tencentcloud.com/pt/" hreflang="pt" />
+    <link rel="alternate" href="https://www.tencentcloud.com/ind/" hreflang="id" />
+    <link rel="alternate" href="https://www.tencentcloud.com/en/" hreflang="en" />
+    <link rel="alternate" href="https://www.tencentcloud.com/" hreflang="x-default" /> 
+    <link rel="canonical" href="https://cloud.tencent.com/"> -->
+    <!-- 解决跨域访问问题 -->
+    <script>document.domain = 'cloud.tencent.com';</script>
+    <script>timeStamps[1] = new Date();</script>
+    <!-- <script>
+        !function (t, e) { "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = t || self).assetsRetry = e() }(this, function () { "use strict"; function a(t) { return t } function d() { } function r(t, e) { try { return "function" == typeof t[e] } catch (t) { return !1 } } function y(t) { return Array.isArray(t) ? t.reduce(function (t, e, n, r) { return t[e] = r[(n + 1) % r.length], t }, {}) : t } function p(e, t) { return Object.keys(t).filter(function (t) { return -1 < e.indexOf(t) }).sort(function (t, e) { return e.length - t.length })[0] } var e, g = "retryTimes", m = "succeeded", b = "failed", E = "maxRetryCount", O = "onRetry", f = "onSuccess", s = "onFail", j = "domain", h = "_assetsRetryScript", v = "_assetsRetryOnerror", l = "script", w = "data-assets-retry-hooked", S = "data-retry-id", A = window, k = window.document, n = A.HTMLElement, R = A.HTMLScriptElement, c = A.HTMLStyleElement, x = A.HTMLLinkElement, L = A.HTMLImageElement, o = Object.prototype.hasOwnProperty, T = function (t, e, n) { var r = t.indexOf(e); return -1 === r ? t : t.substring(0, r) + n + t.substring(r + e.length) }, _ = function (t) { return [].slice.call(t) }, M = function (e, t, n, r) { void 0 === n && (n = d), void 0 === r && (r = !1); var o, i, c, u, a, f = r || e.defer || e.async; "loading" !== k.readyState || /Edge|MSIE|rv:/i.test(navigator.userAgent) || f ? (o = k.createElement(l), Object.keys(R.prototype).forEach(function (t) { if ("src" !== t && e[t] && "object" != typeof e[t]) try { o[t] = e[t] } catch (t) { } }), o.src = t, o.onload = e.onload, o.onerror = e.onerror, o.setAttribute(S, P()), (i = e.getAttribute("nonce")) && o.setAttribute("nonce", i), k.getElementsByTagName("head")[0].appendChild(o)) : (c = P(), u = e.outerHTML.replace(/data-retry-id="[^"]+"/, "").replace(/src=(?:"[^"]+"|.+)([ >])/, S + "=" + c + ' src="' + t + '"$1'), k.write(u), (a = k.querySelector("script[" + S + '="' + c + '"]')) && (a.onload = n)) }, N = function (e) { try { return e.rules } catch (t) { try { return e.cssRules } catch (t) { return null } } }, H = function (e, t, n) { var r = k.createElement("link"); Object.keys(x.prototype).forEach(function (t) { if ("href" !== t && e[t] && "object" != typeof e[t]) try { r[t] = e[t] } catch (t) { } }), r.href = t, r.onload = n, r.setAttribute(S, P()), k.getElementsByTagName("head")[0].insertBefore(r, e) }, I = function (t) { return t ? t instanceof n ? [t.nodeName, t.src, t.href, t.getAttribute(S)].join(";") : "not_supported" : "null" }, P = function () { return Math.random().toString(36).slice(2) }, C = function (t) { return t instanceof R || t instanceof L ? t.src : t instanceof x ? t.href : null }, B = {}, F = function (t, e) { var n, r = $(t, e), o = r[0], i = r[1]; return o ? (B[o] = B[o] || ((n = {})[g] = 0, n[b] = [], n[m] = [], n), [i, B[o]]) : [] }, $ = function (t, e) { var n, r, o = p(t, e); return o ? [(r = o, (n = t).substr(n.indexOf(r) + r.length, n.length)), o] : ["", ""] }; try { e = function (t) { for (var e = Object.getPrototypeOf ? Object.getPrototypeOf : function (t) { return t.__proto__ }, n = Object.keys(t); e(t);)n = n.concat(Object.keys(e(t))), t = e(t); return n.filter(function (t) { return "constructor" !== t }) }(R.prototype) } catch (t) { } function i(a, t) { var f = t[E], s = y(t[j]), l = t[O]; return e.reduce(function (t, e) { var n = r(R.prototype, e); return t[e] = n ? { value: function () { return a[h][e].apply(a[h], arguments) } } : { set: function (o) { return "onerror" === e ? (a[v] = o, void (a[h].onerror = function (r) { r.stopPropagation && r.stopPropagation(); function t() { return t = a[v], e = a[h], n = r, "function" != typeof t ? null : t.call(e, n); var t, e, n } var e = a[h].src, n = F(e, s), o = n[0], i = n[1]; if (!o || !i) return t(); var c = T(e, o, s[o]), u = l(c, e, i); if (null === u) return t(); if ("string" != typeof u) throw new Error("a string should be returned in `onRetry` function"); i[g] <= f ? M(a[h], u, d, !0) : t() })) : "onload" === e ? (a._assetsRetryOnload = o, void (a[h].onload = function (t) { var e = a[h].src, n = F(e, s), r = (n[0], n[1]); r && -1 === r[b].indexOf(e) && r[m].push(e), o && !o._called && (o._called = !0, o.call(a[h], t)) })) : void (a[h][e] = o) }, get: function () { return a[h][e] } }, t }, {}) } var q = function (n) { var r = k.createElement; k.createElement = function (t, e) { return t === l ? function (t, e) { var n; t.setAttribute(w, "true"); var r = ((n = {})[h] = t, n[v] = d, n), o = i(r, e); return Object.defineProperties(r, o), r }(r.call(k, l), n) : r.call(k, t, e) }, k.createElement.toString = function () { return "function createElement() { [native code] }" } }, z = function (n) { Object.keys(n).filter(function (t) { return r(n, t) }).forEach(function (t) { var e = n[t]; n[t] = function () { var t = [].slice.call(arguments).map(function (t) { return t && o.call(t, h) ? t[h] : t }); return e.apply(this, t) }, /^\w+$/.test(t) && (n[t].toString = new Function("return 'function " + t + "() { [native code] }'")) }) }; var Z = {}; function D(y) { function c(t) { if (t) { var e = t.target || t.srcElement, n = C(e); if (n) { var r = F(n, v), o = r[0], i = r[1]; if (i && o) { i[g]++, i[b].push(n); var c, u = i[g] > y[E]; if (u && (c = $(n, v)[0], h(c)), v[o] && !u) { var a = v[o], f = T(n, o, a), s = p(f, n, i); if (null !== s) { if ("string" != typeof s) throw new Error("a string should be returned in `onRetry` function"); var l, d = I(e); Z[d] || (Z[d] = !0, l = function () { i[m].push(s) }, e instanceof R && !e.getAttribute(w) && e.src ? M(e, s, l) : e instanceof x && e.href ? (e.getAttribute('crossorigin') && e.removeAttribute('crossorigin'), H(e, s, l)) : e instanceof L && e.src && (e.setAttribute(S, P()), e.src = s, e.onload = l)) } } } } } } var p = y[O], u = y[f], h = y[s], v = y[j]; k.addEventListener("error", c, !0), k.addEventListener("load", function (t) { var e, n, r, o, i; t && (e = t.target || t.srcElement, (n = C(e)) && (e.getAttribute(S) && (r = $(n, v)[0], u(r)), e instanceof x && k.styleSheets && (o = _(k.styleSheets).filter(function (t) { return t.href === e.href })[0], null !== (i = N(o)) && 0 === i.length && c(t)))) }, !0) } function u(t, e, n, r, o) { var i = o[j], c = o[O], u = e.style && e.style[t]; if (u && !/^url\(["']?data:/.test(u)) { var a = u.match(/^url\(["']?(.+?)["']?\)/) || [], f = a[1]; if (f) { var s = p(f, i); if (s && i[s]) { var l = Object.keys(i).map(function (t) { var e = T(f, s, t); return 'url("' + c(e, f, null) + '")' }).join(","), d = e.selectorText + ("{ " + t.replace(/([a-z])([A-Z])/g, function (t, e, n) { return e + "-" + n.toLowerCase() })) + ": " + l + " !important; }"; try { n.insertRule(d, r.length) } catch (t) { n.insertRule(d, 0) } } } } } var G = {}, J = [], K = function (t, o) { var i = ["backgroundImage", "borderImage", "listStyleImage"]; t.forEach(function (n) { var r, t = N(n); null !== t && ((r = _(t)).forEach(function (e) { i.forEach(function (t) { u(t, e, n, r, o) }) }), n.href && (G[n.href] = !0), n.ownerNode instanceof c && J.push(n.ownerNode)) }) }, Q = function (t, n) { return _(t).filter(function (t) { if (!N(t)) return !1; if (t.href) return !G[t.href] && !!p(t.href, n); var e = t.ownerNode; return !(e instanceof c && -1 < J.indexOf(e)) }) }; return function (t) { var e, n, r, o; void 0 === t && (t = {}); try { if ("object" != typeof t[j]) throw new Error("opts.domain cannot be non-object."); var i = [E, O, f, s, j], c = Object.keys(t).filter(function (t) { return -1 === i.indexOf(t) }); if (0 < c.length) throw new Error("option name: " + c.join(", ") + " is not valid."); var u = ((e = {})[E] = t[E] || 3, e[O] = t[O] || a, e[f] = t[f] || d, e[s] = t[s] || d, e[j] = y(t[j]), e); return q(u), "undefined" != typeof Node && z(Node.prototype), "undefined" != typeof Element && z(Element.prototype), D(u), n = u, r = k.styleSheets, o = n[j], false && setInterval(function () { var t = Q(k.styleSheets, o); 0 < t.length && K(t, n) }, 250), B } catch (t) { A.console && console.error("[assetsRetry] error captured", t) } } });
+        try {
+            function __parseReportUrl(url) {
+                var match = url.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/);
+                return match && {
+                    href: url,
+                    protocol: match[1],
+                    host: match[2],
+                    hostname: match[3],
+                    port: match[4],
+                    pathname: match[5],
+                    search: match[6],
+                    hash: match[7]
+                }
+            }
+
+            var domainReportTag = {
+                'assets-retry-success': 0,
+                'assets-retry-fail': 0
+            };
+            var eventMaxReportTimes = 5;
+            var assetsRetryReport = function (event, originalUrl) {
+                var originalUrlObj = __parseReportUrl(originalUrl);
+
+                // 上报限制次数
+                if (domainReportTag[event] && domainReportTag[event] >= eventMaxReportTimes) {
+                    return;
+                }
+                domainReportTag[event]++;
+
+                var reportData = {
+                    url: location.href,
+                    referrer: document.referrer || '',
+                    event: event,
+                    app: 'qcmain',
+                    level: 0,
+                    at: new Date().getTime(),
+                    uin: '',
+                    originalUrl: originalUrl,
+                    originalCdnDomain: originalUrlObj.hostname
+                }
+
+                var reportUrl = 'https://insight.cloud.tencent.com/event';
+                var isSupportSendBeacon = typeof navigator.sendBeacon === 'function';
+
+                if (JSON && JSON.stringify) {
+                    var reportStr = JSON.stringify(reportData);
+                    if (isSupportSendBeacon) {
+                        navigator.sendBeacon(reportUrl, reportStr);
+                    } else {
+                        reportStr = encodeURIComponent(reportStr);
+                        reportStr = btoa(reportStr);
+                        new Image().src = reportUrl + '?d=' + reportStr;
+                    }
+                }
+            };
+
+            // information of assets
+            var assetsRetryStatistics = window.assetsRetry({
+                // domain list, only resources in the domain list will be retried.
+                domain: {
+                    'cloudcache.tencentcs.com': 'cloudcache.tencent-cloud.com',
+                    'cloudcache.tencent-cloud.com': 'cloudcache.tencentcs.com',
+                    'main.qcloudimg.com': 'qcloudimg.tencentcs.com',
+                    'qcloudimg.tencentcs.com': 'main.qcloudimg.com',
+                    'cloudcache.tencent-cloud.cn': 'cloudcache.tencentcs.cn',
+                    'cloudcache.tencentcs.cn': 'cloudcache.tencent-cloud.cn',
+                    'qcloudimg.tencent-cloud.cn': 'qcloudimg.tencentcs.cn',
+                    'qcloudimg.tencentcs.cn': 'qcloudimg.tencent-cloud.cn'
+                },
+                // maximum retry count for each asset, default is 3
+                maxRetryCount: 2,
+                // onRetry hook is how you can customize retry logic with, default is x => x
+                onRetry: function (currentUrl, originalUrl, statistics) {
+                    return currentUrl;
+                },
+                onSuccess: function (currentUrl) {
+                    var curStatic = assetsRetryStatistics[currentUrl];
+                    if (curStatic && curStatic.failed && curStatic.failed.length) {
+                        assetsRetryReport('assets-retry-success', curStatic.failed[0])
+                    }
+                },
+                onFail: function (currentUrl) {
+                    var curStatic = assetsRetryStatistics[currentUrl];
+                    if (curStatic && curStatic.failed && curStatic.failed.length) {
+                        assetsRetryReport('assets-retry-fail', curStatic.failed[0])
+                    }
+                }
+            })
+        } catch (err) { }
+    </script> -->
+
+    <!-- <script src="https://cdn-go.cn/tam/aegis-sdk/latest/aegis.f.min.js"></script> -->
+    <!-- <script>
+    if (window.Aegis) {
+        // build report api url
+        var __aegisApiUrlHandler = function (apiUrl, payload) {
+            try {
+                if (typeof URL === 'function') {
+                    if (/^\/\//.test(apiUrl)) {
+                        apiUrl = location.protocol + apiUrl;
+                    }
+                    if (!/http|\/\//.test(apiUrl)) {
+                        apiUrl = location.protocol + '//' + location.host + apiUrl;
+                    }
+                    var urlObj = new URL(apiUrl);
+                    var apiPath = urlObj.pathname;
+                    var hostname = urlObj.hostname;
+                    var origin = urlObj.origin;
+
+                    // Add the action in the payload to the url
+                    if (payload) {
+                        payload = JSON.parse(payload);
+                        if (payload.action) {
+                            if (apiPath.indexOf('/', apiPath.length - 1) !== -1) {
+                                apiPath = [apiPath, payload.action].join('');
+                            } else {
+                                apiPath = [apiPath, payload.action].join('/');
+                            }
+                        }
+                    }
+
+                    // 云API
+                    if (apiPath === '/capi/ajax/') {
+                        apiPath = apiPath + [urlObj.searchParams.get('serviceType'), urlObj.searchParams.get('cmd')].join('/')
+                    }
+
+                    return { apiUrl: origin + apiPath, apiPath: apiPath };
+                }
+            } catch (e) {
+                return { apiUrl: apiUrl };
+            }
+        };
+
+        // build report api is error
+        var __aegisApiErrCodeHandler = function (apiPath, code) {
+            var isErr = false;
+            try {
+                if (code !== 0 && window.__aegisApiErrCodeConfig && apiPath) {
+                    if (__aegisApiErrCodeConfig[apiPath] && __aegisApiErrCodeConfig[apiPath].includes && __aegisApiErrCodeConfig[apiPath].includes(Number(code))) {
+                        isErr = true;
+                    }
+                }
+            } catch (e) { }
+
+            return isErr;
+        }
+
+        /**
+         * @param {{ logType: 'log'; logs: { level: Aegis.logType.CSS_ERROR; msg : string } }} data
+         */
+        var __aegisCSSLoadFailFilter = function (data) {
+            if (!/qcloud_uid/.test(document.cookie)) {
+                // missing `qcloud_uid` in cookie, ignore
+                return false;
+            }
+
+            if (typeof URL !== 'function') return;
+
+            try {
+                var match = /(https:\/\/.+)$/.exec(data.logs.msg);
+                if (!match || !match[1]) {
+                    // URL not found
+                    return;
+                }
+                var urlObj = new URL(match[1]);
+                if (urlObj.hostname === location.hostname) {
+                    // css resource which load using main domain, ignore
+                    return false;
+                }
+                if (/css\/modules/.test(urlObj.pathname)) {
+                    // `**/css/module/*.css` which appear in different url path load failed, ignore
+                    return false;
+                }
+            } catch (e) {
+                return;
+            }
+        }
+
+        var aegis = window.aegisIns = new Aegis({
+            id: "dWOw9fv7jg4XmVzQ09",
+            onError: true,
+            pagePerformance: true,
+            reportAssetSpeed: true,
+            reportAssetSpeed: true,
+            api: {
+                reportRequest: true,
+                resHeaders: ['x-req-id'],
+                retCodeHandler(data, url, xhr, payload) {
+                    try {
+                        data = JSON.parse(data);
+                    } catch (e) {
+                        data = {};
+                    }
+                    var code = data.code;
+                    var action = data.payloadAction;
+                    var apiPath = __aegisApiUrlHandler(url, payload).apiPath;
+
+                    return {
+                        isErr: __aegisApiErrCodeHandler(apiPath, code),
+                        code: code
+                    }
+                }
+            },
+            reportApiSpeed: {
+                urlHandler(url, payload) {
+                    return __aegisApiUrlHandler(url, payload).apiUrl;
+                },
+            },
+            ext1: "b27fcd12cc8dcee117b23af5dd49aaa0%40devS",
+            beforeRequest: function (data) {
+                // 过滤掉一些明确上报
+                var ignoreKeys = ['Script error', 'chrome-extension', 'qq.com', 'queryWeappQrcodeStatus', 'login/ajax/info', 'woa.com', 'trafficCollect.php', 'google', 'dscache', 'act-api', 'set_qc_cookie', 'opc.cloud.tencent.com', 'uc_gre_ad_buss', 'eb.xcj.pub'];
+                var alarmMsg = [data.logs.url, data.logs.msg].join('|');
+                for (var i = 0; i < ignoreKeys.length; i++) {
+                    if (alarmMsg.indexOf(ignoreKeys[i]) != -1) return false;
+                }
+
+                // 过滤掉爬虫和开发者工具环境
+                if (/bot|wechatdevtools|spider/i.test(navigator.userAgent)) {
+                    return false;
+                }
+                // 过滤掉堆栈里无js文件的
+                if (data.logs.level === '4' && data.logs.msg && data.logs.msg.indexOf('.js') === -1) {
+                    return false;
+                }
+
+                // handle CSS ERROR (suffix `.css` OR tagName === 'link')
+                if (data.logType === 'log' && data.logs.level === Aegis.logType.CSS_ERROR) {
+                    return __aegisCSSLoadFailFilter(data);
+                }
+            }
+        })
+    }
+</script> -->
+
+    <link rel="stylesheet"
+        href="//cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/gateway/portal/css/base-20209142343.css?max_age=31536000&amp;t=20191128">
+    <!-- 下面这个是主样式css -->
+    <link id="qcportal-kit-style" rel="stylesheet"
+        href="https://cloudcache.tencent-cloud.com/qcloud/portal/kit/full.2b030633a3b98f7c9fa3.css">
+    <meta name="applicable-device" content="pc,mobile">
+    <!-- <meta property="og:image" content="https://cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/gateway/shareicons/cloud.png"> -->
+
+    <link rel="stylesheet"
+        href="https://cloudcache.tencentcs.cn/qcloud/ui/tea-portal-material-portal/build/Main/Main-202401302105.css" />
+    <link rel="modulepreload" href="https://cloudcache.tencent-cloud.com/qcloud/portal/home/assets/vendor.5398c8aa.js">
+    <style type="text/css">
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            .tpm-app-hidden {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body class="tpm-view-l">
+    <!-- <input type="hidden" id="shareThumbnail" value="https://cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/gateway/shareicons/cloud.png"> -->
+    <div class="body hero-shadow" aegis-first-screen-timing="true">
+        <div id="qcportal-kit-topnav">
+            <div role="navigation" id="navigationBar" data-type="cn_zh" class="pls-nav pls-nav-air fixed">
+                <div class="pls-nav-mod">
+                    <div class="pls-nav-top"><a class="pls-nav-top-logo" href="https://cloud.tencent.com"
+                            hotrep="hp.header.hp"><i>腾讯云</i></a>
+                        <div class="pls-nav-list-wrap">
+                            <ul class="pls-nav-list">
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.act"
+                                        href="https://cloud.tencent.com/act">最新活动<i class="pls-nav-tag"><span
+                                                class="pls-nav-tag-text">HOT</span></i></a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.product"
+                                        href="https://cloud.tencent.com/product">产品</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.solution"
+                                        href="https://cloud.tencent.com/solution">解决方案</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.price"
+                                        href="https://cloud.tencent.com/price">定价</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.ecenter"
+                                        href="https://cloud.tencent.com/ecenter">企业中心</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.market"
+                                        href="https://market.cloud.tencent.com">云市场</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.developer"
+                                        href="https://cloud.tencent.com/landing/developer-ecology">开发者</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.support"
+                                        href="https://cloud.tencent.com/act/event/service-support">客户支持</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.cooperate"
+                                        href="https://cloud.tencent.com/landing/partner-ecology">合作与生态</a></li>
+                                <li class="pls-nav-item" tabindex="-1"><a role="button" hotrep="hp.header.learn"
+                                        href="https://cloud.tencent.com/about">了解腾讯云</a></li>
+                            </ul>
+                        </div>
+                        <div class="pls-nav-top-operation"></div>
+                    </div>
+                    <section class="pls-nav-dropdown" style="visibility: hidden;height: 0;">
+                        <div
+                            style="height:0;transition:transform ease-in-out .2s, opacity ease-in-out .2s;opacity:0;transform:translate(0, -100%);">
+                            <a class="pls-nav-dropdown-close" hotrep="hp.header.close">关闭</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div id="navigationBar" class="pls-m-nav">
+                <div class="pls-m-nav-bar">
+                    <div class="pls-m-nav-bar-main">
+                        <a href="https://cloud.tencent.com/" class="pls-m-nav-logo"></a>
+                    </div>
+                    <div class="pls-m-nav-bar-extra">
+                        <a class="pls-m-nav-btn" aria-label="搜索"><i class="pls-m-nav-btn-icon search"></i></a>
+                        <a class="pls-m-nav-btn profile" aria-label="用户"><i class="pls-m-nav-btn-icon user"></i></a>
+                        <a class="pls-m-nav-btn" aria-label="菜单"><i
+                                class="pls-m-nav-btn-icon menu"><span></span><span></span><span></span></i></a>
+                    </div>
+                    <div class="pls-nav-dropdown search" style="display: none;">
+                        <div class="pls-m-nav-search">
+                            <div class="pls-m-nav-search-bar">
+                                <input type="text" class="pls-m-nav-search-input" placeholder="请输入搜索的关键词" value="" />
+                                <a class="pls-m-nav-search-btn">搜索</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                window.ISMOBILE = false;
+            </script>
+            <script>window.__language = 'zh'</script>
+            <div id="root" class="tpm-app-hidden">
+                <div class="page-container" data-reactroot="">
+                    <div class="tpm-hero2 tpm-hero2--with-3d tpm-hero2-event" role="banner">
+                        <div>
+                            <div class="hero__model-wrap">
+                                <div class="hero__model-inner-wrap"><canvas class="hero__model-canvas"></canvas></div>
+                            </div>
+                        </div>
+                        <div class="tpm-hero2__main">
+                            <ul class="tpm-hero2__list">
+                                <li class="tpm-list__item is-active" style="z-index:2;">
+                                    <a href="https://cloud.tencent.com/act/pro/lhds?from=21889"
+                                        class="tpm-hero2__item-link" hotrep="home.hero.banner1" aria-label="10秒搭建游戏服务器"
+                                        target="_blank">
+                                        <div style="opacity:1;" class="tpm-hero2__item-bg-wrap">
+                                            <div class="tpm-hero2__item-bg"></div>
+                                        </div>
+                                        <div class="tpm-hero2__item-content" style="opacity:1;">
+                                            <div class="tpm-hero2__item-content-inner">
+                                                <h3 class="tpm-hero2__item-title">10秒搭建游戏服务器</h3>
+                                                <div class="tpm-hero2__item-desc">无需部署，10秒完成游戏联机服务器搭建，下单即刻畅玩，热门配置26元/月起！
+                                                </div>
+                                                <div class="tpm-hero2__item-btns">
+                                                    <button class="tpm-btn tpm-btn--primary size-xl"
+                                                        style="background-color:">
+                                                        <span class="tpm-btn__text">立即选购</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="tpm-hero2__item">
+                                    <a href="https://cloud.tencent.com/act/pro/searchall?from=21849"
+                                        class="tpm-hero2__item-link" hotrep="home.hero.banner3" aria-label="优惠全站搜"
+                                        target="_blank">
+                                        <div style="opacity:0" class="tpm-hero2__item-bg-wrap">
+                                            <div class="tpm-hero2__item-bg"></div>
+                                        </div>
+                                        <div class="tpm-hero2__item-content" style="opacity:0">
+                                            <div class="tpm-hero2__item-content-inner">
+                                                <h3 class="tpm-hero2__item-title">优惠全站搜</h3>
+                                                <div class="tpm-hero2__item-desc">汇聚全站折扣商品，筛选直达指定配置，快来试试！</div>
+                                                <div class="tpm-hero2__item-btns"><button
+                                                        class="tpm-btn tpm-btn--primary size-xl"
+                                                        style="background-color:"><span
+                                                            class="tpm-btn__text">立即选购</span></button></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="tpm-hero2__item">
+                                    <a href="https://cloud.tencent.com/act/pro/center?from=21850"
+                                        class="tpm-hero2__item-link" hotrep="home.hero.banner4" aria-label="企业服务中心"
+                                        target="_blank">
+                                        <div style="opacity:0" class="tpm-hero2__item-bg-wrap">
+                                            <div class="tpm-hero2__item-bg"></div>
+                                        </div>
+                                        <div class="tpm-hero2__item-content" style="opacity:0">
+                                            <div class="tpm-hero2__item-content-inner">
+                                                <h3 class="tpm-hero2__item-title">企业服务中心</h3>
+                                                <div class="tpm-hero2__item-desc">为企业提供多行业场景解决方案及企业专属优惠，助力企业实现数字化转型升级
+                                                </div>
+                                                <div class="tpm-hero2__item-btns"><button
+                                                        class="tpm-btn tpm-btn--primary size-xl"
+                                                        style="background-color:"><span
+                                                            class="tpm-btn__text">立即选购</span></button></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="tpm-hero2__item">
+                                    <a href="https://cloud.tencent.com/solution/mpsdp?from=21895"
+                                        class="tpm-hero2__item-link" hotrep="home.hero.banner5" aria-label="小程序·短剧解决方案"
+                                        target="_blank">
+                                        <div style="opacity:0" class="tpm-hero2__item-bg-wrap">
+                                            <div class="tpm-hero2__item-bg"></div>
+                                        </div>
+                                        <div class="tpm-hero2__item-content" style="opacity:0">
+                                            <div class="tpm-hero2__item-content-inner">
+                                                <h3 class="tpm-hero2__item-title">小程序·短剧解决方案</h3>
+                                                <div class="tpm-hero2__item-desc">助力短剧内容分发和商业变现，灵活开发、安全防盗</div>
+                                                <div class="tpm-hero2__item-btns"><button
+                                                        class="tpm-btn tpm-btn--primary size-xl"
+                                                        style="background-color:"><span
+                                                            class="tpm-btn__text">立即体验</span></button></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tpm-hero2__ctrl">
+                                <div class="tpm-hero2__ctrl-list">
+                                    <div class="tpm-hero2__ctrl-item-line" style="top:0%;height:20%"></div>
+                                    <div class="tpm-hero2__ctrl-item is-active" hotrep="home.hero.slide1">
+                                        <div class="tpm-hero2__ctrl-item-inner">
+                                            <div class="tpm-hero2__ctrl-item-tit">
+                                                <h3 class="tpm-hero2__ctrl-item-tittext">10秒搭建游戏服务器</h3>
+                                            </div>
+                                            <div style="visibility:hidden" class="tpm-hero2__ctrl-item-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tpm-hero2__ctrl-item" hotrep="home.hero.slide2">
+                                        <div class="tpm-hero2__ctrl-item-inner">
+                                            <div class="tpm-hero2__ctrl-item-tit">
+                                                <h3 class="tpm-hero2__ctrl-item-tittext">开年·上云有礼</h3>
+                                            </div>
+                                            <div style="visibility:hidden" class="tpm-hero2__ctrl-item-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tpm-hero2__ctrl-item" hotrep="home.hero.slide3">
+                                        <div class="tpm-hero2__ctrl-item-inner">
+                                            <div class="tpm-hero2__ctrl-item-tit">
+                                                <h3 class="tpm-hero2__ctrl-item-tittext">优惠全站搜</h3>
+                                            </div>
+                                            <div style="visibility:hidden" class="tpm-hero2__ctrl-item-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tpm-hero2__ctrl-item" hotrep="home.hero.slide4">
+                                        <div class="tpm-hero2__ctrl-item-inner">
+                                            <div class="tpm-hero2__ctrl-item-tit">
+                                                <h3 class="tpm-hero2__ctrl-item-tittext">企业服务中心</h3>
+                                            </div>
+                                            <div style="visibility:hidden" class="tpm-hero2__ctrl-item-progress"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tpm-hero2__ctrl-item" hotrep="home.hero.slide5">
+                                        <div class="tpm-hero2__ctrl-item-inner">
+                                            <div class="tpm-hero2__ctrl-item-tit">
+                                                <h3 class="tpm-hero2__ctrl-item-tittext">小程序·短剧解决方案</h3>
+                                            </div>
+                                            <div style="visibility:hidden" class="tpm-hero2__ctrl-item-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tpm-hero2__entries-wrap tpm-hero2__entries--with-media">
+                            <div class="tpm-hero2__entries-inner">
+                                <a href="https://cloud.tencent.com/product/cvm?from=13950" class="tpm-hero2__entry"
+                                    hotrep="hp.belowbanner.news1" target="_blank">
+                                    <h3 class="tpm-hero2__entry-title">
+                                        <i class="tpm-hero2__entry-icon"
+                                            style="background-image:url(https://main.qcloudimg.com/trisys/assets/home/images/hero/entry-cvm.png)"></i>云服务器CVM
+                                    </h3>
+                                    <div class="tpm-hero2__entry-desc">提供安全可靠的弹性计算服务</div>
+                                </a>
+                                <a href="https://cloud.tencent.com/act/free/personal?from=20417"
+                                    class="tpm-hero2__entry" hotrep="hp.belowbanner.news2" target="_blank">
+                                    <h3 class="tpm-hero2__entry-title">
+                                        <i class="tpm-hero2__entry-icon"
+                                            style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/8633f8de17a940d87048bcab070429b3.png)"></i>免费试用
+                                    </h3>
+                                    <div class="tpm-hero2__entry-desc">服务器等 60+ 款产品免费试用</div>
+                                </a>
+                                <a href="https://cloud.tencent.com/act/pro/global_video?from=21795"
+                                    class="tpm-hero2__entry" hotrep="hp.belowbanner.news3" target="_blank">
+                                    <h3 class="tpm-hero2__entry-title">
+                                        <i class="tpm-hero2__entry-icon"
+                                            style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/7400cc22bc8cf9de908838e8dbe231da.png)"></i>音视频通信助力出海
+                                    </h3>
+                                    <div class="tpm-hero2__entry-desc">短剧出海等热门场景解决方案</div>
+                                </a>
+                                <a class="tpm-hero2__event tpm-hero2__event--single"
+                                    style="background-image:linear-gradient(to bottom, #0052d9 0%, rgba(0, 82, 217, 0.85) 100%);border-color:rgba(0, 82, 217, 0.45);box-shadow:8px 8px 20px 0 rgba(0, 82, 217, 0.4)"
+                                    href="https://cloud.tencent.com/act/pro/lhds?from=21889"
+                                    hotrep="hp.belowbanner.newsbar.link1">
+                                    <main class="tpm-hero2__event-main">
+                                        <div class="tpm-hero2__event-subimg"><img src="" alt="" /></div>
+                                    </main>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="tpm-section tpm-product__section is-full section-version-v2">
+                        <div class="tpm-section__inner">
+                            <header class="tpm-section__hd">
+                                <h2 class="tpm-section__title">性能强大、安全、稳定的云产品</h2>
+                                <div class="tpm-section__sub">
+                                    <span class="tpm-section__desc">腾讯多年技术沉淀，300+款产品共筑腾讯云产品矩阵</span>
+                                    <span class="tpm-section__links">
+                                        <a href="https://cloud.tencent.com/product"
+                                            class="tp-link tpm-link tp-link--arrow"><span
+                                                class="tp-link__inner">查看全部产品</span></a>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="tpm-section__bd">
+                                <div class="tpm-product tpm-product--multi version-v2">
+                                    <div class="tpm-tabs tpm-product__tab tpm-tabs--scroll">
+                                        <div class="tpm-tabs__bar">
+                                            <ul class="tpm-tabs__list" role="tablist">
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="true" tabindex="0"
+                                                        class="tpm-tabs__item is-active"
+                                                        hotrep="home.product.category.hot">
+                                                        <div class="tpm-tabs__item-cont">
+                                                            <i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/5136c1ad7c345f40505298ec87c9704a.svg)"></i>热门推荐
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.bigdata-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/c1dc4c00c8e756969909cd953b8ab87f.svg)"></i>大数据
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.compute-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/9535a5847a9bdb3458817b91f1144393.svg)"></i>计算
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.ai-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/a2b36d58f075b7fb10bf2cb5bf6cf69f.svg)"></i>人工智能与机器学习
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.container-and-middleware-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/d4d32e695e8857b3136f533ab71a22f6.svg)"></i>容器与中间件
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.developer-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/6897a10db901ac66333390484790b96f.svg)"></i>开发与运维
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.storage-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/c761903b2b0366fd0f84871617408a0e.svg)"></i>存储
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.enterprise-and-communication-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/c76373c42757e894024ac76fd4ef8499.svg)"></i>云通信与企业服务
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.tencentdb-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/ef8cbe7b73e97f54b3c831bcee5b52bc.svg)"></i>数据库
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.office-collaboration-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://main.qcloudimg.com/image/product/534/16_16/blue.svg)"></i>办公协同
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.network-and-cdn-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/b0b4960298b57b6028799c58fbd39c0d.svg)"></i>网络
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.wecha-ecosystem-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/6dde2b237b93e9fdc1a33bcacd5da925.svg)"></i>微信生态
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.cdn-and-cloud-communication-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/c44cdb49c16b43900604eef994098fec.svg)"></i>CDN与边缘
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.iot-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://main.qcloudimg.com/image/product/2700/16_16/blue.svg)"></i>物联网
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.video-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/7c42822a8fbe95e4402526742a17cb4c.svg)"></i>视频服务
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.industry-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://main.qcloudimg.com/image/product/105/16_16/blue.svg)"></i>行业应用
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="tpm-tabs__list-inner">
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.security-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/4fa2f0565176511c1699cbfd599389d1.svg)"></i>安全
+                                                        </div>
+                                                    </li>
+                                                    <li role="tab" aria-hidden="false" aria-selected="false"
+                                                        tabindex="-1" class="tpm-tabs__item"
+                                                        hotrep="home.product.category.service-marketing-class">
+                                                        <div class="tpm-tabs__item-cont"><i class="tpm-tabs__item-icon"
+                                                                style="background-image:url(https://main.qcloudimg.com/image/product/3038/16_16/blue.svg)"></i>服务与营销
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                        <div class="tpm-tabs__cont">
+                                            <div class="tpm-tabs__panel"
+                                                style="transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                                <section class="tpm-product__detail">
+                                                    <aside class="tpm-product__detail-side">
+                                                        <div class="tpm-product__recommends">
+                                                            <div class="tpm-product__recommend"><a
+                                                                    href="https://cloud.tencent.com/product/lighthouse"
+                                                                    class="tpm-product__recommend-link" target="_blank"
+                                                                    hotrep="home.product.hot.lighthouse"></a>
+                                                                <header class="tpm-product__recommend-hd">
+                                                                    <h3 class="tpm-product__recommend-title">轻量应用服务器
+                                                                    </h3>
+                                                                </header>
+                                                                <div class="tpm-product__recommend-desc">开箱即用，轻量应用场景首选
+                                                                </div>
+                                                                <div class="tpm-product__recommend-labels"><span
+                                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                                            class="tpm-tag__inner">简单易用</span></span><span
+                                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                                            class="tpm-tag__inner">稳定可靠</span></span>
+                                                                </div>
+                                                                <div class="tpm-product__recommend-btns"><a
+                                                                        href="https://buy.cloud.tencent.com/lighthouse?from=cloud"
+                                                                        hotrep="home.product.hot.lighthouse_btn1"
+                                                                        target="_blank"
+                                                                        class="tpm-btn tpm-btn--primary"><span
+                                                                            class="tpm-btn__text">立即选购</span></a><a
+                                                                        href="https://cloud.tencent.com/product/lighthouse"
+                                                                        hotrep="home.product.hot.lighthouse_btn2"
+                                                                        target="_blank"
+                                                                        class="tpm-btn tpm-btn--white"><span
+                                                                            class="tpm-btn__text">产品介绍</span></a></div>
+                                                            </div>
+                                                            <div class="tpm-product__recommend"><a
+                                                                    href="https://cloud.tencent.com/product/gpu"
+                                                                    class="tpm-product__recommend-link" target="_blank"
+                                                                    hotrep="home.product.hot.gpu"></a>
+                                                                <header class="tpm-product__recommend-hd">
+                                                                    <h3 class="tpm-product__recommend-title">GPU 云服务器
+                                                                    </h3>
+                                                                    <span class="tpm-tag tpm-tag--hole"><span
+                                                                            class="tpm-tag__inner">热门</span></span>
+                                                                </header>
+                                                                <div class="tpm-product__recommend-desc">主攻AI、渲染场景，极致算力
+                                                                </div>
+                                                                <div class="tpm-product__recommend-labels"><span
+                                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                                            class="tpm-tag__inner">快速部署</span></span><span
+                                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                                            class="tpm-tag__inner">一键部署</span></span>
+                                                                </div>
+                                                                <div class="tpm-product__recommend-btns"><a
+                                                                        href="https://buy.cloud.tencent.com/cvm?regionId=1&amp;zoneId=100003&amp;instanceClass=G&amp;tab=custom"
+                                                                        hotrep="home.product.hot.gpu_btn1"
+                                                                        target="_blank"
+                                                                        class="tpm-btn tpm-btn--primary"><span
+                                                                            class="tpm-btn__text">立即选购 </span></a><a
+                                                                        href="https://cloud.tencent.com/product/gpu"
+                                                                        hotrep="home.product.hot.gpu_btn2"
+                                                                        target="_blank"
+                                                                        class="tpm-btn tpm-btn--white"><span
+                                                                            class="tpm-btn__text">产品介绍</span></a></div>
+                                                            </div>
+                                                        </div>
+                                                    </aside>
+                                                    <main class="tpm-product__detail-main">
+                                                        <ul class="tpm-product-set__list">
+                                                            <li><a href="https://cloud.tencent.com/product/es"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.es" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">Elasticsearch
+                                                                            Service</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">开箱即用的云端全托管ELK服务
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">易于部署</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">强劲内核</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">安全加固</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/cvm"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.cvm" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">云服务器</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">安全稳定，高弹性的计算服务
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">高安全</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">高可靠</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">高弹性</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/domain"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.domain" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">域名注册</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">专业域名服务，省心可信赖
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">智能解析</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">流量调度</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">安全防护</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/ccc"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.ccc" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">云联络中心</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">灵活稳定的一体化客户联络平台
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">快速接入</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">深度融合</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">多端互通</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/aiart"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.aiart" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">AI 绘画</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">
+                                                                        基于输入的图片或文本智能生成与之相关的图片
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">高效创造</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">文生图</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">图生图</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/cls"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.cls" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">日志服务</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">一站式日志数据解决方案</div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">运营运维</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">告警监控</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">便捷弹性</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/trabbit"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.trabbit" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">消息队列 RabbitMQ
+                                                                            版
+                                                                        </h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">100%兼容开源，开箱即用
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">稳定</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">易用</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">灵活扩缩容</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/cdn"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.cdn" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">内容分发网络 CDN
+                                                                        </h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">快速稳定的内容分发加速服务
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">简单易用</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">全球加速</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/trtc"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.trtc" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">实时音视频</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">高品质的音视频互动解决方案
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">超低延迟</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">全平台互通</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/waf"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.waf" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">Web 应用防火墙
+                                                                        </h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">一步筑牢应用安全防线</div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">BOT管理</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">API安全</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/ci"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.ci" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">数据万象</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">图文音视频一站式处理平台
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">内容审核</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">批量处理</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">成本优化</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li><a href="https://cloud.tencent.com/product/dns"
+                                                                    class="tpm-product-set tpm-product-set--summary"
+                                                                    hotrep="home.product.hot.dns" target="_blank">
+                                                                    <header class="tpm-product-set__hd">
+                                                                        <h4 class="tpm-product-set__title">云解析 DNS</h4>0
+                                                                    </header>
+                                                                    <div class="tpm-product-set__desc">提供稳定、安全、快速的智能解析服务
+                                                                    </div>
+                                                                    <div class="tpm-product-set__labels"><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">智能解析</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">超强防护</span></span><span
+                                                                            class="tpm-tag tpm-tag--weak-hole"><span
+                                                                                class="tpm-tag__inner">流量调度</span></span>
+                                                                    </div>
+                                                                </a></li>
+                                                        </ul>
+                                                        <div class="tpm-product-set__list-trigger">
+                                                            <a class="tp-link tpm-link tp-link--arrow-bottom"><span
+                                                                    class="tp-link__inner">展开</span></a>
+                                                        </div>
+                                                    </main>
+                                                </section>
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                            <div class="tpm-tabs__panel"
+                                                style="height:0;width:0;overflow:hidden;opacity:0;padding:0;margin:0;pointer-events:none;display:block;transition:opacity .5s ease;transform-origin:center;transition-duration:800ms;flex-shrink:0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tpm-section tpm-solution2__section">
+                        <div class="tpm-section__inner">
+                            <header class="tpm-section__hd">
+                                <h2 class="tpm-section__title">面向丰富业务场景的全栈解决方案</h2>
+                            </header>
+                            <div class="tpm-section__bd">
+                                <div class="tpm-solution2">
+                                    <div class="tpm-solution2__cards">
+                                        <div class="tpm-solution2__card v2 is-active" hotrep="home.solution.card1">
+                                            <a hotrep="home.solution.card1.title"
+                                                href="https://cloud.tencent.com/act/event/video_BestPractices?from=18857"
+                                                class="tpm-solution2__card-tit pc">音视频通信</a>
+                                            <div class="tpm-solution2__card-cover"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/fe6668aace108dc8d83e01b3571c2ac9.jpeg)">
+                                                <div class="tpm-solution2__card-tit mobile">音视频通信</div>
+                                                <a href="https://cloud.tencent.com/act/event/video_BestPractices?from=18857"
+                                                    class="tpm-solution2__card-link"></a>
+                                                <h3 class="tpm-solution2__card-desc">提供坚实的云端一体音视频 PaaS 能力</h3>
+                                                <div class="tpm-solution2__card-btn mobile">
+                                                    <button class="tpm-btn tpm-btn--white"
+                                                        hotrep="home.solution.card1.btn1">
+                                                        <span class="tpm-btn__text">立即咨询</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="tpm-solution2__card-cnt">
+                                                <ul class="tpm-list tpm-solution2__card-features tpm-list--blue-hook">
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">
+                                                                腾讯 20 余年音视频领域深厚技术积淀开放</span></div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">依托腾讯云实时音视频通信网络，实现全球互通</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">全终端 SDK
+                                                                ，云端一体音视频解决方案，最快1天接入</span></div>
+                                                    </li>
+                                                </ul>
+                                                <div class="tpm-group tpm-solution2__card-case">
+                                                    <div class="tpm-group__tit">客户案例</div>
+                                                    <div class="tpm-group__bd">
+                                                        <div class="tpm-logo-card__wrap">
+                                                            <div class="tpm-logo-card__wrap-inner">
+                                                                <ul class="tpm-logo-card__list">
+                                                                    <li><a hotrep="home.solution.card1.customer1"
+                                                                            href="https://cloud.tencent.com/customer/dytv"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/128938875bb3f369cc3d040f2a27a7a1.png)"
+                                                                                    class="tpm-logo-card__img">斗鱼直播
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                    <li><a hotrep="home.solution.card1.customer2"
+                                                                            href="https://cloud.tencent.com/customer/weimob"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/0f22247c2ba315f2e61b25d370adce73.png)"
+                                                                                    class="tpm-logo-card__img">微盟</div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-group tpm-solution2__card-prod">
+                                                    <div class="tpm-group__tit">相关产品</div>
+                                                    <div class="tpm-group__bd">
+                                                        <ul class="tpm-list tpm-list--post">
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card1.product1"
+                                                                    href="https://cloud.tencent.com/product/trtc"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/cd7551d9822d19d3392314f36c629379.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">实时音视频
+                                                                            TRTC</span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card1.product2"
+                                                                    href="https://cloud.tencent.com/product/im"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/011b2cc4be6620abdd53175966cdcd11.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">即时通信 IM</span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card1.product3"
+                                                                    href="https://cloud.tencent.com/product/css"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/856ae8e3f6fa81170d601186ffded2d0.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">云直播 CSS</span>
+                                                                    </div>
+                                                                </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-solution2__card-btns">
+                                                    <button hotrep="home.solution.card1.btn1"
+                                                        class="tpm-btn tpm-btn--primary">
+                                                        <span class="tpm-btn__text">立即咨询</span>
+                                                    </button>
+                                                    <button hotrep="home.solution.card1.btn2"
+                                                        class="tpm-btn tpm-btn--white">
+                                                        <span class="tpm-btn__text">查看更多</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tpm-solution2__card v2 " hotrep="home.solution.card2">
+                                            <a href="" hotrep="home.solution.card2.title"
+                                                href="https://cloud.tencent.com/solution/game"
+                                                class="tpm-solution2__card-tit pc">游戏云</a>
+                                            <div class="tpm-solution2__card-cover"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/be73e2c29ad6e32e519e35c4aa595c93.jpeg)">
+                                                <div class="tpm-solution2__card-tit mobile">游戏云</div>
+                                                <a href="https://cloud.tencent.com/solution/game"
+                                                    class="tpm-solution2__card-link"></a>
+                                                <h3 class="tpm-solution2__card-desc">致力于打造高质量、全方位生态的游戏云服务平台</h3>
+                                                <div class="tpm-solution2__card-btn mobile">
+                                                    <button class="tpm-btn tpm-btn--white"
+                                                        hotrep="home.solution.card2.btn1">
+                                                        <span class="tpm-btn__text">立即咨询</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="tpm-solution2__card-cnt">
+                                                <ul class="tpm-list tpm-solution2__card-features tpm-list--blue-hook">
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">高
+                                                                IO 云服务器、高可用云数据库万量级 IOPS</span></div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">自建万兆云机房，全球覆盖，配备 100+ BGP
+                                                                顶级网络</span></div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">与开放平台、应用宝、玩吧、QQ
+                                                                浏览器无缝对接</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="tpm-group tpm-solution2__card-case">
+                                                    <div class="tpm-group__tit">客户案例</div>
+                                                    <div class="tpm-group__bd">
+                                                        <div class="tpm-logo-card__wrap">
+                                                            <div class="tpm-logo-card__wrap-inner">
+                                                                <ul class="tpm-logo-card__list">
+                                                                    <li><a hotrep="home.solution.card2.customer1"
+                                                                            href="https://cloud.tencent.com/customer/hszz"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/cf086d3b6f12c649789da28e2829372a.png)"
+                                                                                    class="tpm-logo-card__img">部落冲突：皇室战争
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                    <li><a hotrep="home.solution.card2.customer2"
+                                                                            href="https://cloud.tencent.com/customer/mnsj"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/5d14c80acc1a7a8f53a9b16859c39789.png)"
+                                                                                    class="tpm-logo-card__img">迷你世界
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                    <li><a hotrep="home.solution.card2.customer3"
+                                                                            href="https://cloud.tencent.com/customer/sdsxsjj"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/629b42f14fc181b63f18bed81e38a7bc.png)"
+                                                                                    class="tpm-logo-card__img">圣斗士星矢集结
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-group tpm-solution2__card-prod">
+                                                    <div class="tpm-group__tit">相关产品</div>
+                                                    <div class="tpm-group__bd">
+                                                        <ul class="tpm-list tpm-list--post">
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card2.product1"
+                                                                    href="https://cloud.tencent.com/product/cvm"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/f6804323083e76883dd501360e1e3b97.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">云服务器</span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card2.product2"
+                                                                    href="https://cloud.tencent.com/product/tcaplusdb"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/629eeb6192f5b34be02a02b35c613126.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">游戏数据库</span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card2.product3"
+                                                                    href="https://cloud.tencent.com/product/gme"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/0801d929bc3708e7b332baa979c471f7.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">游戏多媒体引擎</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-solution2__card-btns">
+                                                    <button hotrep="home.solution.card2.btn1"
+                                                        class="tpm-btn tpm-btn--primary">
+                                                        <span class="tpm-btn__text">立即咨询</span>
+                                                    </button>
+                                                    <button hotrep="home.solution.card2.btn2"
+                                                        class="tpm-btn tpm-btn--white">
+                                                        <span class="tpm-btn__text">查看更多</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tpm-solution2__card v2 " hotrep="home.solution.card3">
+                                            <a hotrep="home.solution.card3.title"
+                                                href="https://cloud.tencent.com/solution/lowcode"
+                                                class="tpm-solution2__card-tit pc">微搭低代码</a>
+                                            <div class="tpm-solution2__card-cover"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/764cbd51ea772702830635238b98bbbd.jpeg)">
+                                                <div class="tpm-solution2__card-tit mobile">微搭低代码</div>
+                                                <a href="https://cloud.tencent.com/solution/lowcode"
+                                                    class="tpm-solution2__card-link"></a>
+                                                <h3 class="tpm-solution2__card-desc">高性能低代码开发平台，拖拽式构建小程序及其他应用</h3>
+                                                <div class="tpm-solution2__card-btn mobile"><button
+                                                        class="tpm-btn tpm-btn--white"
+                                                        hotrep="home.solution.card3.btn1"><span
+                                                            class="tpm-btn__text">立即咨询</span></button></div>
+                                            </div>
+                                            <div class="tpm-solution2__card-cnt">
+                                                <ul class="tpm-list tpm-solution2__card-features tpm-list--blue-hook">
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">降本增效：丰富免费的模板快速拖拽构建</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">一键部署：微搭产品包含云资源，无需单独采购
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">集成微信和企微：私有链路直连微信，三步上线企微工作台</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="tpm-group tpm-solution2__card-case">
+                                                    <div class="tpm-group__tit">客户案例</div>
+                                                    <div class="tpm-group__bd">
+                                                        <div class="tpm-logo-card__wrap">
+                                                            <div class="tpm-logo-card__wrap-inner">
+                                                                <ul class="tpm-logo-card__list">
+                                                                    <li><a hotrep="home.solution.card3.customer1"
+                                                                            href="https://cloud.tencent.com/developer/article/2174793"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/408e49c67f3f918d178c6db8b414c9aa.png)"
+                                                                                    class="tpm-logo-card__img">湖北工业大学
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-group tpm-solution2__card-prod">
+                                                    <div class="tpm-group__tit">相关产品</div>
+                                                    <div class="tpm-group__bd">
+                                                        <ul class="tpm-list tpm-list--post">
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card3.product1"
+                                                                    href="https://cloud.tencent.com/product/weda"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/c7e8d8fec0615ea78deb1129131fd044.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">微搭低代码平台</span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card3.product2"
+                                                                    href="https://cloud.tencent.com/product/tcb"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/737172a1ace704ab827cb7e94171835a.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">云开发</span></div>
+                                                                </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-solution2__card-btns">
+                                                    <button hotrep="home.solution.card3.btn1"
+                                                        class="tpm-btn tpm-btn--primary"><span
+                                                            class="tpm-btn__text">立即咨询</span></button><button
+                                                        hotrep="home.solution.card3.btn2"
+                                                        class="tpm-btn tpm-btn--white"><span
+                                                            class="tpm-btn__text">查看更多</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tpm-solution2__card v2 " hotrep="home.solution.card4">
+                                            <a hotrep="home.solution.card4.title"
+                                                href="https://cloud.tencent.com/solution/finance"
+                                                class="tpm-solution2__card-tit pc">金融</a>
+                                            <div class="tpm-solution2__card-cover"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/b4bf3633fad3b3e28a6dac48c8474934.jpeg)">
+                                                <div class="tpm-solution2__card-tit mobile">金融</div>
+                                                <a href="https://cloud.tencent.com/solution/finance"
+                                                    class="tpm-solution2__card-link"></a>
+                                                <h3 class="tpm-solution2__card-desc">新基建、新连接、新服务，全面助力行业数字化转型</h3>
+                                                <div class="tpm-solution2__card-btn mobile">
+                                                    <button class="tpm-btn tpm-btn--white"
+                                                        hotrep="home.solution.card4.btn1"><span
+                                                            class="tpm-btn__text">立即咨询</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="tpm-solution2__card-cnt">
+                                                <ul class="tpm-list tpm-solution2__card-features tpm-list--blue-hook">
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">新基建，助力金融机构夯实技术底座</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">新连接，助力金融机构与用户之间的高效触达</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">新服务，助力金融机构打造面向垂直场景的创新解决方案</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="tpm-group tpm-solution2__card-case">
+                                                    <div class="tpm-group__tit">客户案例</div>
+                                                    <div class="tpm-group__bd">
+                                                        <div class="tpm-logo-card__wrap">
+                                                            <div class="tpm-logo-card__wrap-inner">
+                                                                <ul class="tpm-logo-card__list">
+                                                                    <li><a hotrep="home.solution.card4.customer1"
+                                                                            href=" https://cloud.tencent.com/customer/xyyh"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/68d6831a4d3a797c42802949c3e600ac.png)"
+                                                                                    class="tpm-logo-card__img">兴业银行
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                    <li><a hotrep="home.solution.card4.customer2"
+                                                                            href="https://cloud.tencent.com/customer/dwzq"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/b66497772fb52ba7b39ab0716665a897.png)"
+                                                                                    class="tpm-logo-card__img">东吴证券
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-group tpm-solution2__card-prod">
+                                                    <div class="tpm-group__tit">相关产品</div>
+                                                    <div class="tpm-group__bd">
+                                                        <ul class="tpm-list tpm-list--post">
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card4.product1"
+                                                                    href="https://cloud.tencent.com/solution/tce"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/91ae628dd444d93e90171d00e459435f.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">腾讯云 TCE </span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card4.product2"
+                                                                    href="https://cloud.tencent.com/product/tddbms"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/ec59493ecd73b8bf7d8db60d1d153468.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">分布式数据库 TDSQL
+                                                                        </span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card4.product3"
+                                                                    href="https://cloud.tencent.com/product/faceid"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://qcloudimg.tencent-cloud.cn/raw/4b5eb55b77eaba85989a47e4803bf96e.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">人脸核身</span>
+                                                                    </div>
+                                                                </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-solution2__card-btns"><button
+                                                        hotrep="home.solution.card4.btn1"
+                                                        class="tpm-btn tpm-btn--primary"><span
+                                                            class="tpm-btn__text">立即咨询</span></button><button
+                                                        hotrep="home.solution.card4.btn2"
+                                                        class="tpm-btn tpm-btn--white"><span
+                                                            class="tpm-btn__text">查看更多</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tpm-solution2__card v2 " hotrep="home.solution.card5">
+                                            <a hotrep="home.solution.card5.title"
+                                                href="https://cloud.tencent.com/act/pro/factory?from=19641"
+                                                class="tpm-solution2__card-tit pc">制造业</a>
+                                            <div class="tpm-solution2__card-cover"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/4c1a78651b29ce6136fc0926e348e3d7.jpeg)">
+                                                <div class="tpm-solution2__card-tit mobile">制造业</div>
+                                                <a href="https://cloud.tencent.com/act/pro/factory?from=19641"
+                                                    class="tpm-solution2__card-link"></a>
+                                                <h3 class="tpm-solution2__card-desc">助力制造业实现生产透明化、办公无纸化、车间无人化</h3>
+                                                <div class="tpm-solution2__card-btn mobile"><button
+                                                        class="tpm-btn tpm-btn--white"
+                                                        hotrep="home.solution.card5.btn1"><span
+                                                            class="tpm-btn__text">立即咨询</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="tpm-solution2__card-cnt">
+                                                <ul class="tpm-list tpm-solution2__card-features tpm-list--blue-hook">
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">架构企业数字化顶层设计和搭建数字化统一底座；</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">围绕数据采集、数据分析、数据应用，实现企业数据闭环</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="tpm-list__item">
+                                                        <div class="tpm-list__item-cnt"><span
+                                                                class="tpm-list__item-text">聚焦生产透明化、办公无纸化、车间无人化、节能减排等工业场景</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="tpm-group tpm-solution2__card-case">
+                                                    <div class="tpm-group__tit">客户案例</div>
+                                                    <div class="tpm-group__bd">
+                                                        <div class="tpm-logo-card__wrap">
+                                                            <div class="tpm-logo-card__wrap-inner">
+                                                                <ul class="tpm-logo-card__list">
+                                                                    <li><a hotrep="home.solution.card5.customer1"
+                                                                            href="https://cloud.tencent.com/customer/zjgiicloud"
+                                                                            class="tpm-logo-card">
+                                                                            <div class="tpm-logo-card__img-wrap">
+                                                                                <div style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/b20324205a26ff1caf322693319c3db0.png)"
+                                                                                    class="tpm-logo-card__img">张家港</div>
+                                                                            </div>
+                                                                        </a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-group tpm-solution2__card-prod">
+                                                    <div class="tpm-group__tit">相关产品</div>
+                                                    <div class="tpm-group__bd">
+                                                        <ul class="tpm-list tpm-list--post">
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card5.product1"
+                                                                    href="https://cloud.tencent.com/product/tke"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://main.qcloudimg.com/image/product/2006/24_24/blue.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">容器服务</span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card5.product2"
+                                                                    href="https://cloud.tencent.com/product/iotexplorer"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://main.qcloudimg.com/image/product/2173/24_24/blue.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text"> 物联网开发平台</span>
+                                                                    </div>
+                                                                </a></li>
+                                                            <li class="tpm-list__item tpm-list__item--icon"><a
+                                                                    hotrep="home.solution.card5.product3"
+                                                                    href="https://cloud.tencent.com/product/rwp"
+                                                                    class="tpm-list__item-link"><img
+                                                                        src="https://main.qcloudimg.com/image/product/2910/24_24/blue.svg"
+                                                                        alt="" class="tpm-list__item-icon" />
+                                                                    <div class="tpm-list__item-cnt"><span
+                                                                            class="tpm-list__item-text">RayData
+                                                                            网页版</span>
+                                                                    </div>
+                                                                </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tpm-solution2__card-btns"><button
+                                                        hotrep="home.solution.card5.btn1"
+                                                        class="tpm-btn tpm-btn--primary"><span
+                                                            class="tpm-btn__text">立即咨询</span></button><button
+                                                        hotrep="home.solution.card5.btn2"
+                                                        class="tpm-btn tpm-btn--white"><span
+                                                            class="tpm-btn__text">查看更多</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="tpm-solution2__navs">
+                                        <li><a hotrep="home.solution.card6"
+                                                href="https://cloud.tencent.com/solution/education"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/af14217f927eedc0c3c403ddb0b4a8a3.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">教育</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">教育行业数字助手</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card7"
+                                                href="https://cloud.tencent.com/solution/bigdata"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/e9405a43d1c3e68b3e2eb42f6783f987.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">大数据</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">快速构建企业级数据架构</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card8"
+                                                href="https://cloud.tencent.com/solution/privatecloud"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/77d8ac28ee107e0523b8ca60fe8852d4.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">专有云</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">专业安全稳定的云平台</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card9"
+                                                href="https://cloud.tencent.com/solution/gradedprotection"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/6805e8de35b66e7e87fe4d06d3a3d09e.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">安全</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">快速省心一站式过等保</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card10"
+                                                href="https://cloud.tencent.com/solution/medical"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/bfbcf8d7614bcd231c16da40ea1d48b5.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">医疗</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">助力健康产业智慧化升级</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card11"
+                                                href="https://cloud.tencent.com/solution/government"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/9780f877770e03979b7462549a17ad8f.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">政务</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">打造全域融合信息化平台</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card12"
+                                                href="https://cloud.tencent.com/solution/tourism"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/e44f8613c89741b78886fc6680effaa7.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">文旅</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">文旅产业数字化转型升级</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card13"
+                                                href="https://cloud.tencent.com/solution/la" class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/c92a7debc16466ddd27a7e5b0c1eb6ef.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">小程序·云开发</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">稳定可靠一站式后端云服务</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card14"
+                                                href="https://cloud.tencent.com/solution/auto"
+                                                class="tpm-solution2__nav">
+                                                <div class="tpm-solution2__nav-inner"><span
+                                                        class="tpm-solution2__nav-icon"
+                                                        style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/3dd9b2c23b66acc947d0f205225e437a.png)"></span>
+                                                    <div class="tpm-solution2__nav-cnt">
+                                                        <h3 class="tpm-solution2__nav-title">汽车</h3>
+                                                        <h3 class="tpm-solution2__nav-desc">技术助力行业数字化转型</h3>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li><a hotrep="home.solution.card15" href="/solution"
+                                                class="tpm-solution2__nav is-more">
+                                                <div class="tpm-solution2__nav-inner">
+                                                    <h3 class="tpm-solution2__nav-title">全部解决方案</h3>
+                                                    <div class="tpm-solution2__nav-link">查看更多</div>
+                                                </div>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tpm-section tpm-ecology__section bg-gray tpm-gap">
+                        <div class="tpm-section__inner">
+                            <header class="tpm-section__hd">
+                                <h2 class="tpm-section__title">服务千万开发者的云生态</h2>
+                            </header>
+                            <div class="tpm-section__bd">
+                                <div class="tpm-ecology2">
+                                    <div class="tpm-ecology2__cell">
+                                        <div class="tpm-ecology2__card" hotrep="home.developer.developer"><span
+                                                class="tpm-ecology2__card-qr"></span>
+                                            <div class="tpm-ecology2__card-object"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/e2b975488457dabb5f3c6e760f59521b.png)">
+                                            </div>
+                                            <div class="tpm-ecology2__card-main">
+                                                <h3 class="tpm-ecology2__card-title"
+                                                    hotrep="home.developer.developer.portal">开发者社区</h3>
+                                                <div class="tpm-ecology2__card-tags"><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">技术干货</span></span><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">技术活动</span></span><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">开发者成长</span></span>
+                                                </div>
+                                                <div class="tpm-ecology2__card-desc">面向开发者的一站式线上技术交流阵地</div>
+                                                <ul class="tpm-list tpm-ecology2__card-list">
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">技术干货聚集地</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">技术课程学习平台</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">技术大咖面对面</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">开发技术实践交流</span></li>
+                                                </ul>
+                                                <ul class="tpm-ecology2__card-links">
+                                                    <li><a hotrep="home.developer.developer.btn1"
+                                                            href="https://cloud.tencent.com/developer/column?from=gw"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">技术文章</span></a></li>
+                                                    <li><a hotrep="home.developer.developer.btn2"
+                                                            href="https://cloud.tencent.com/developer/ask?from=gw"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">技术问答</span></a></li>
+                                                    <li><a hotrep="home.developer.developer.btn3"
+                                                            href="https://cloud.tencent.com/developer/learning"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">学习中心</span></a></li>
+                                                    <li><a hotrep="home.developer.developer.btn4"
+                                                            href="https://cloud.tencent.com/developer/salon?from=gw"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">技术沙龙</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tpm-ecology2__bubble "><img
+                                                    src="https://qcloudimg.tencent-cloud.cn/raw/42c198dbc0b57ae490e57f89aa01ec23.png"
+                                                    alt="" class="tpm-ecology2__bubble-qr" />
+                                                <div class="tpm-ecology2__bubble-cnt">
+                                                    <div class="tpm-ecology2__bubble-tit">扫码关注 腾讯云开发者</div>
+                                                    <div class="tpm-ecology2__bubble-list-tit">可获权益</div>
+                                                    <ul class="tpm-list tpm-ecology2__bubble-list">
+                                                        <li class="tpm-list__item"><span
+                                                                class="tpm-list__item-text">10元无门槛代金劵</span></li>
+                                                        <li class="tpm-list__item"><span
+                                                                class="tpm-list__item-text">洞察腾讯核心技术</span></li>
+                                                        <li class="tpm-list__item"><span
+                                                                class="tpm-list__item-text">剖析业界实践案例</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tpm-ecology2__cell">
+                                        <div class="tpm-ecology2__card" hotrep="home.developer.tvp">
+                                            <div class="tpm-ecology2__card-object"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/8c4476593d97dc27b0cdfeb7c578b4aa.png)">
+                                            </div>
+                                            <div class="tpm-ecology2__card-main">
+                                                <h3 class="tpm-ecology2__card-title" hotrep="home.developer.tvp.portal">
+                                                    腾讯云TVP</h3>
+                                                <div class="tpm-ecology2__card-tags"><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">技术专家</span></span><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">活动报道</span></span><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">线下大会</span></span><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">在线直播</span></span>
+                                                </div>
+                                                <div class="tpm-ecology2__card-desc">基于行业技术专家的一流云计算技术生态圈</div>
+                                                <ul class="tpm-list tpm-ecology2__card-list">
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">300+技术专家</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">150+行业大使</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">100+系列活动</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">8项专属权益</span></li>
+                                                </ul>
+                                                <ul class="tpm-ecology2__card-links">
+                                                    <li><a hotrep="home.developer.tvp.btn1"
+                                                            href="https://cloud.tencent.com/tvp/activity"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">TVP系列活动</span></a></li>
+                                                    <li><a hotrep="home.developer.tvp.btn2"
+                                                            href="https://cloud.tencent.com/developer/tvp-apply"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">申请加入</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tpm-ecology2__cell">
+                                        <div class="tpm-ecology2__card" hotrep="home.developer.edu">
+                                            <div class="tpm-ecology2__card-object"
+                                                style="background-image:url(https://qcloudimg.tencent-cloud.cn/raw/c727ade2e719e4d379d393864399d2c0.png)">
+                                            </div>
+                                            <div class="tpm-ecology2__card-main">
+                                                <h3 class="tpm-ecology2__card-title" hotrep="home.developer.edu.portal">
+                                                    产业互联网学堂</h3>
+                                                <div class="tpm-ecology2__card-tags"><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">视频课程</span></span><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">培训认证</span></span><span
+                                                        class="tpm-tag tpm-tag--weak-hole"><span
+                                                            class="tpm-tag__inner">动手实验</span></span>
+                                                </div>
+                                                <div class="tpm-ecology2__card-desc">面向腾讯云生态用户的全方位学习成长平台</div>
+                                                <ul class="tpm-list tpm-ecology2__card-list">
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">体系化的课程内容</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">多维度的教学方式</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">权威性的认证考试</span></li>
+                                                    <li class="tpm-list__item"><span
+                                                            class="tpm-list__item-text">全方位的人才培养</span></li>
+                                                </ul>
+                                                <ul class="tpm-ecology2__card-links">
+                                                    <li><a hotrep="home.developer.edu.btn1"
+                                                            href="https://cloud.tencent.com/edu/learning"
+                                                            class="tp-link tpm-link icon icon-video"><span
+                                                                class="tp-link__inner">视频课程</span></a></li>
+                                                    <li><a hotrep="home.developer.edu.btn2"
+                                                            href="https://cloud.tencent.com/lab"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">动手实验</span></a></li>
+                                                    <li><a hotrep="home.developer.edu.btn3"
+                                                            href="https://cloud.tencent.com/edu/training"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">认证考试</span></a></li>
+                                                    <li><a hotrep="home.developer.edu.btn4"
+                                                            href="https://cloud.tencent.com/edu/training/enterprise"
+                                                            class="tp-link tpm-link "><span
+                                                                class="tp-link__inner">企业培训</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tpm-section tpm-case__section tpm-gap tpm-case">
+                        <div class="tpm-section__inner">
+                            <header class="tpm-section__hd">
+                                <h2 class="tpm-section__title">服务全球海量客户的行业案例</h2>
+                                <div class="tpm-section__sub"><span
+                                        class="tpm-section__desc">腾讯云完善的服务体系为企业数字化上云保驾护航</span><span
+                                        class="tpm-section__links"><a href="https://cloud.tencent.com/customer"
+                                            class="tp-link tpm-link tp-link--arrow"><span
+                                                class="tp-link__inner">查看更多客户案例</span></a></span>
+                                </div>
+                            </header>
+                            <div class="tpm-section__bd">
+                                <div class="lazyload-wrapper ">
+                                    <div class="lazyload-placeholder"></div>
+                                </div>
+                                <div class="lazyload-wrapper ">
+                                    <div class="lazyload-placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Code injected by live-server -->
+        <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+</body>
+
+</html>
